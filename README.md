@@ -3,6 +3,7 @@ I wanted to intercept the communication between my Flexispot E5B standing desk b
 It should work on any other flexispot desk as well, as i suspect they use the same button interface with nearly the same protocol. But this needs testing!
 
 # RJ45 Pins
+```
 1 - RES
 2 - SWIM
 3 - ?
@@ -11,6 +12,7 @@ It should work on any other flexispot desk as well, as i suspect they use the sa
 6 - TX
 7 - GND
 8 - VCC
+```
 
 # Using SWIM
 The SWIM Debug interface is on the RJ45 Port, but not possible to use, due to set Read Protection, which can only be disabled by overwriting the Chip itself.
