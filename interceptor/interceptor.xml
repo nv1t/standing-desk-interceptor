@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/data/custom/home/jhoersch/devel/troubleshooting/flexispot/interceptor/interceptor.sch</source>
+    <date>Wed 04 Mar 2020 16:18:41 CET</date>
+    <tool>Eeschema 5.1.5-52549c5~84~ubuntu18.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>interceptor.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>RJ45</value>
+      <footprint>Connector_RJ:RJ12_Amphenol_54601</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="RJ45" description="RJ connector, 8P8C (8 positions 8 connected)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E5FC4BB</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>RJ45</value>
+      <footprint>Connector_RJ:RJ12_Amphenol_54601</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="RJ45" description="RJ connector, 8P8C (8 positions 8 connected)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E601436</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="8P8C">
+      <aliases>
+        <alias>RJ31</alias>
+        <alias>RJ32</alias>
+        <alias>RJ33</alias>
+        <alias>RJ34</alias>
+        <alias>RJ35</alias>
+        <alias>RJ41</alias>
+        <alias>RJ45</alias>
+        <alias>RJ49</alias>
+        <alias>RJ61</alias>
+      </aliases>
+      <description>RJ connector, 8P8C (8 positions 8 connected), RJ31/RJ32/RJ33/RJ34/RJ35/RJ41/RJ45/RJ49/RJ61</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>8P8C*</fp>
+        <fp>RJ31*</fp>
+        <fp>RJ32*</fp>
+        <fp>RJ33*</fp>
+        <fp>RJ34*</fp>
+        <fp>RJ35*</fp>
+        <fp>RJ41*</fp>
+        <fp>RJ45*</fp>
+        <fp>RJ49*</fp>
+        <fp>RJ61*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">8P8C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+        <pin num="7" name="~" type="passive"/>
+        <pin num="8" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/library/Connector.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(J1-Pad5)">
+      <node ref="J2" pin="5"/>
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="2" name="Net-(J1-Pad2)">
+      <node ref="J2" pin="2"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="3" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="4" name="Net-(J1-Pad4)">
+      <node ref="J2" pin="4"/>
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="5" name="Net-(J1-Pad6)">
+      <node ref="J1" pin="6"/>
+      <node ref="J2" pin="6"/>
+    </net>
+    <net code="6" name="Net-(J1-Pad7)">
+      <node ref="J2" pin="7"/>
+      <node ref="J1" pin="7"/>
+    </net>
+    <net code="7" name="Net-(J1-Pad8)">
+      <node ref="J2" pin="8"/>
+      <node ref="J1" pin="8"/>
+    </net>
+    <net code="8" name="Net-(J1-Pad1)">
+      <node ref="J1" pin="1"/>
+      <node ref="J2" pin="1"/>
+    </net>
+  </nets>
+</export>
