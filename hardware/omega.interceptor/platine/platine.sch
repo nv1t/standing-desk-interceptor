@@ -75,7 +75,6 @@ Wire Wire Line
 Wire Wire Line
 	6750 1300 7250 1300
 Connection ~ 6750 1300
-Connection ~ 5850 1300
 NoConn ~ 9300 2100
 NoConn ~ 9300 2200
 NoConn ~ 9300 2300
@@ -93,40 +92,17 @@ Wire Wire Line
 Connection ~ 8450 2800
 Wire Wire Line
 	9300 2400 8450 2400
-Connection ~ 8450 2400
 Wire Wire Line
 	9300 3900 8450 3900
 Connection ~ 8450 3900
 Wire Wire Line
 	8450 3900 8450 4300
-Text Label 4150 2000 0    50   ~ 0
-5V
 Text Label 6950 1300 0    50   ~ 0
 3.3V
 Text Label 9000 2400 0    50   ~ 0
 WAKE
 Text Label 9000 3900 0    50   ~ 0
 WAKE
-Wire Wire Line
-	4500 1300 5150 1300
-$Comp
-L Switch:SW_DIP_x01 SW-Power1
-U 1 1 5E954C19
-P 5150 1000
-F 0 "SW-Power1" V 5104 1130 50  0000 L CNN
-F 1 "SW_DIP_x01" V 5195 1130 50  0000 L CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W7.62mm_P2.54mm_LowProfile" H 5150 1000 50  0001 C CNN
-F 3 "~" H 5150 1000 50  0001 C CNN
-	1    5150 1000
-	0    1    1    0   
-$EndComp
-Connection ~ 5150 1300
-Wire Wire Line
-	5150 1300 5850 1300
-Wire Wire Line
-	5150 700  8450 700 
-Wire Wire Line
-	8450 700  8450 2400
 $Comp
 L power:Earth #PWR0101
 U 1 1 5E95AB88
@@ -240,138 +216,6 @@ F 3 "~" H 6250 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Micro J1
-U 1 1 5E850005
-P 3750 2250
-F 0 "J1" H 3807 2717 50  0000 C CNN
-F 1 "USB_B_Micro" H 3807 2626 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-AB_Molex_47590-0001" H 3900 2200 50  0001 C CNN
-F 3 "~" H 3900 2200 50  0001 C CNN
-	1    3750 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 2050 4500 2050
-Wire Wire Line
-	4500 1300 4500 2050
-NoConn ~ 4050 2250
-NoConn ~ 4050 2350
-NoConn ~ 4050 2450
-$Comp
-L power:Earth #PWR0107
-U 1 1 5E85EFD1
-P 3750 2650
-F 0 "#PWR0107" H 3750 2400 50  0001 C CNN
-F 1 "Earth" H 3750 2500 50  0001 C CNN
-F 2 "" H 3750 2650 50  0001 C CNN
-F 3 "~" H 3750 2650 50  0001 C CNN
-	1    3750 2650
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3650 2650
-$Comp
-L MCU_Module:Omega2+ U2
-U 1 1 5E976E24
-P 6250 3650
-F 0 "U2" H 6250 2361 50  0000 C CNN
-F 1 "Omega2+" H 6250 2270 50  0000 C CNN
-F 2 "Module:Onion_Omega2+" H 6250 2150 50  0001 C CNN
-F 3 "https://docs.onion.io/omega2-docs/omega2p.html" H 3050 2500 50  0001 C CNN
-	1    6250 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_DIP_x03 SW1
-U 1 1 5E881767
-P 7650 3350
-F 0 "SW1" H 7650 3817 50  0000 C CNN
-F 1 "SW_DIP_x03" H 7650 3726 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx03_Slide_6.7x9.18mm_W7.62mm_P2.54mm_LowProfile" H 7650 3350 50  0001 C CNN
-F 3 "~" H 7650 3350 50  0001 C CNN
-	1    7650 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_DIP_x03 SW2
-U 1 1 5E8820C7
-P 7650 4000
-F 0 "SW2" H 7650 4467 50  0000 C CNN
-F 1 "SW_DIP_x03" H 7650 4376 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx03_Slide_6.7x9.18mm_W7.62mm_P2.54mm_LowProfile" H 7650 4000 50  0001 C CNN
-F 3 "~" H 7650 4000 50  0001 C CNN
-	1    7650 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9300 2500 7950 2500
-Wire Wire Line
-	7950 2500 7950 3150
-Wire Wire Line
-	7350 3150 7100 3150
-Wire Wire Line
-	7100 3150 7100 3350
-Wire Wire Line
-	7100 3350 6950 3350
-Wire Wire Line
-	7950 3150 7950 3250
-Connection ~ 7950 3150
-Wire Wire Line
-	6950 3450 7350 3450
-Wire Wire Line
-	7350 3450 7350 3350
-Wire Wire Line
-	7350 3250 7200 3250
-Wire Wire Line
-	7200 3250 7200 3600
-Wire Wire Line
-	7200 3600 8950 3600
-Wire Wire Line
-	8950 3600 8950 4000
-Wire Wire Line
-	8950 4000 9300 4000
-Wire Wire Line
-	7950 3350 8950 3350
-Wire Wire Line
-	8950 3350 8950 3600
-Connection ~ 8950 3600
-Wire Wire Line
-	9300 4100 8250 4100
-Wire Wire Line
-	8250 4100 8250 3800
-Wire Wire Line
-	8250 3800 7950 3800
-Wire Wire Line
-	7350 3800 6950 3800
-Wire Wire Line
-	6950 3800 6950 3750
-Wire Wire Line
-	7950 3800 7950 3900
-Connection ~ 7950 3800
-Wire Wire Line
-	6950 3650 7100 3650
-Wire Wire Line
-	7100 3650 7100 4000
-Wire Wire Line
-	7100 4000 7350 4000
-Wire Wire Line
-	7350 3900 7350 3800
-Wire Wire Line
-	7350 3650 8150 3650
-Wire Wire Line
-	9100 3650 9100 2600
-Wire Wire Line
-	9100 2600 9300 2600
-Connection ~ 7350 3800
-Wire Wire Line
-	7350 3800 7350 3650
-Wire Wire Line
-	7950 4000 8150 4000
-Wire Wire Line
-	8150 4000 8150 3650
-Connection ~ 8150 3650
-Wire Wire Line
-	8150 3650 9100 3650
-$Comp
 L Mechanical:MountingHole H1
 U 1 1 5E8B58E2
 P 4950 1800
@@ -413,6 +257,66 @@ F 1 "MountingHole" H 5550 2255 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 5450 2300 50  0001 C CNN
 F 3 "~" H 5450 2300 50  0001 C CNN
 	1    5450 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Module:Omega2+ U2
+U 1 1 5E976E24
+P 6250 3650
+F 0 "U2" H 6250 2361 50  0000 C CNN
+F 1 "Omega2+" H 6250 2270 50  0000 C CNN
+F 2 "Custom-Connectors:ONION_OMEGA2" H 6250 2150 50  0001 C CNN
+F 3 "https://docs.onion.io/omega2-docs/omega2p.html" H 3050 2500 50  0001 C CNN
+	1    6250 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 2500 7550 2500
+Wire Wire Line
+	7550 2500 7550 3350
+Wire Wire Line
+	7550 3350 6950 3350
+Wire Wire Line
+	6950 3450 8350 3450
+Wire Wire Line
+	8350 3450 8350 4000
+Wire Wire Line
+	8350 4000 9300 4000
+Wire Wire Line
+	9300 4100 7200 4100
+Wire Wire Line
+	7200 4100 7200 3750
+Wire Wire Line
+	7200 3750 6950 3750
+Wire Wire Line
+	6950 3650 8750 3650
+Wire Wire Line
+	8750 3650 8750 2600
+Wire Wire Line
+	8750 2600 9300 2600
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5EF3C7D3
+P 5150 1400
+F 0 "J1" H 5068 1075 50  0000 C CNN
+F 1 "Conn_01x02" H 5068 1166 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5150 1400 50  0001 C CNN
+F 3 "~" H 5150 1400 50  0001 C CNN
+	1    5150 1400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 1300 5850 1300
+Connection ~ 5850 1300
+$Comp
+L power:Earth #PWR0107
+U 1 1 5EF4874D
+P 5350 1400
+F 0 "#PWR0107" H 5350 1150 50  0001 C CNN
+F 1 "Earth" H 5350 1250 50  0001 C CNN
+F 2 "" H 5350 1400 50  0001 C CNN
+F 3 "~" H 5350 1400 50  0001 C CNN
+	1    5350 1400
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
