@@ -5,8 +5,8 @@ import sys
 import os
 
 # this port address is for the serial tx/rx pins on the GPIO header
-SERIAL_PORT_BUT = '/dev/ttyUSB0'
-SERIAL_PORT_CTRL = '/dev/ttyUSB1'
+SERIAL_PORT_BUT = '/dev/ttyUSB1'
+SERIAL_PORT_CTRL = '/dev/ttyUSB0'
 # be sure to set this to the same rate used on the Arduino
 SERIAL_RATE = 9600
 
