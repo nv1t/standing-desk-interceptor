@@ -31,6 +31,8 @@ def read_serial(handler):
 
 def ctrler():
     while True:
+        if os.path.exists('ctrl/kill'):
+            sys.exit(0)
         ser_but.write(read_serial(ser_ctrl))
 
 def board():
@@ -41,6 +43,8 @@ def board():
         elif os.path.exists('ctrl/Mod1'):
             ser_ctrl.write(commands['Mod1'])
             time.sleep(0.1)
+        elif os.path.exists('ctrl/kill'):
+            sys.exit(0)
         else:
             ser_ctrl.write(read_serial(ser_but))
 
